@@ -6,10 +6,7 @@ Tuple::Tuple(int order) {
 }
 
 Tuple::Tuple(const Tuple &old){
-    this->values.resize(old.values.size());
-    for(unsigned int i; i < old.values.size(); i++){
-        this->values[i] = old.values[i];
-    }
+    this->values = old.values;
 }
 
 
@@ -24,7 +21,6 @@ bool Tuple::operator< (const Tuple & other) const{
             return false;
         }
     }
-
     return false;
 }
 
