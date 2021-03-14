@@ -13,6 +13,10 @@ Expression::~Expression(){
     delete Right;
 }
 
+bool Expression::isConstant(){
+    return false;
+}
+
 string Expression::toString(){
     return ("(" + Left->toString() + _operator + Right->toString() + ")");
 }

@@ -7,7 +7,7 @@ using namespace std;
 class Tuple {
     private:
     public:
-    Tuple(){}
+    Tuple(int order);
     Tuple(const Tuple &old);
     bool operator< (const Tuple & other) const;
     string toString() const;

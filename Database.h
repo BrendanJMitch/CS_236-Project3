@@ -10,4 +10,5 @@ class Database{
     public:
     unordered_map<string, Relation> data;
     void populate(DatalogProgram program);
+    string evaluate(vector<Predicate> queries);
 };

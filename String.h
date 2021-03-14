@@ -7,5 +7,6 @@ class String : public Parameter {
     public:
     string val;
     String(std:: string val);
+    virtual bool isConstant();
     virtual std::string toString();
 };

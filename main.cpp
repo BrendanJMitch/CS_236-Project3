@@ -29,11 +29,7 @@ int main(int argc, char *argv[]){
     Database database;
     database.populate(program);
 
-    string str = "";
-    for(auto it = database.data.begin(); it != database.data.end(); it++){
-        str += (it->first + ", " + it->second.toString());
-    }
-    cout << str << endl;
+    cout << database.evaluate(program.queries);
 
     return 0;
 }

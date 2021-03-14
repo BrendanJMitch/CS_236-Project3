@@ -2,7 +2,14 @@
 
 Header::Header(const Header &old){
     for(unsigned int i; i < old.attributes.size(); i++){
-        this->attributes[i] = old.attributes[i];
+        this->attributes.push_back(old.attributes[i]);
+    }
+}
+
+
+void Header::fill(vector<Parameter*> &varnames){
+    for (unsigned int i = 0; i < varnames.size(); i++){
+        this->attributes.push_back(varnames[i]->toString());
     }
 }
 

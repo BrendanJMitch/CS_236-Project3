@@ -10,5 +10,6 @@ class Expression : public Parameter {
     Parameter *Right;
     Expression(Parameter *Left, string _operator, Parameter *Right);
     virtual ~Expression();
+    virtual bool isConstant();
     virtual std::string toString();
 };

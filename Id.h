@@ -7,5 +7,6 @@ class Id : public Parameter {
     public:
     string name;
     Id(string name);
+    virtual bool isConstant();
     virtual string toString();
 };

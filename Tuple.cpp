@@ -1,6 +1,12 @@
 #include "Tuple.h"
 
+Tuple::Tuple(int order) {
+    this->values = vector<string>();
+    this->values.resize(order);
+}
+
 Tuple::Tuple(const Tuple &old){
+    this->values.resize(old.values.size());
     for(unsigned int i; i < old.values.size(); i++){
         this->values[i] = old.values[i];
     }
@@ -25,7 +31,6 @@ bool Tuple::operator< (const Tuple & other) const{
 string Tuple::toString() const{
     string str = "";
     for(unsigned int i = 0; i < this->values.size(); i++){
-        cout << "In a tuple, " << values[i] << endl;
         str += " " + values[i];
     }
     str += "\n";

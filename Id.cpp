@@ -8,3 +8,7 @@ string Id::toString(){
     return name;
 }
 
+bool Id::isConstant(){
+    return false;
+}
+
