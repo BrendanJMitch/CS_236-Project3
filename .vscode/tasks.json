@@ -13,7 +13,7 @@
             	"${fileDirname}\\**.cpp",
             	//"${fileDirname}\\**.h",
             	"-o",
-            	"${fileDirname}\\Interpreter.exe"
+            	"${fileDirname}\\lab3"
 			],
 			"presentation": {
 				"reveal": "silent",
